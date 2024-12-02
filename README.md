@@ -1,1 +1,2 @@
 # Human-Texture-Exploration-Experiment
+This repository contains data, analysis scripts, and documentation for the **Human Texture Exploration Experiment**, which investigates how humans perceive natural textures using tactile exploration with their selected bare fingers. The experiment focuses on understanding the relationship between texture perception, exploration dynamics (scanning speed and normal force), and the variability in human exploratory behaviour.
