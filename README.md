@@ -22,7 +22,7 @@ The original dataset included questionnaire responses, video recordings, and for
   - Participants rated textures on a **-10 to +10 scale** across 5 perceptual dimensions above using **Qualtrics** online questionaire (https://www.qualtrics.com/).
 
 ## Key Findings
-For details, see our published papers (current not available)
+For details, see our published papers (currently not available)
 
 ## Repository Structure
 
@@ -31,7 +31,10 @@ For details, see our published papers (current not available)
 
 - **Processed Data**
   - Includes cleaned and structured datasets ready for analysis.
-
+    
+- **Processing Code**
+  - Scripts used for data collection.
+ 
 - **Visualization Results**
   - Stores summary statistics and figures, such as force-perception and speed-perception relationships.
   
