@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+type: software
+message: >-
+  If you use this repository's software, please cite it using the metadata below
+  and identify the commit used. This citation describes the repository software,
+  not a publication or a reproduction of a publication's results.
+title: Human Strategies for Single Finger Texture Exploration
+authors:
+  - family-names: Li
+    given-names: Ao
+    email: ao.li@bristol.ac.uk
+version: 0.1.0
+repository-code: https://github.com/aoli0919/Human-Texture-Exploration-Experiment
+url: https://github.com/aoli0919/Human-Texture-Exploration-Experiment
+abstract: >-
+  Software for validating supplied human texture-exploration workbooks,
+  producing descriptive statistics and within-participant associations,
+  and collecting new camera and force-sensor trials.
