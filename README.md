@@ -1,5 +1,7 @@
 # Human Strategies for Single Finger Texture Exploration
 
+[![Reproduce processed-data analysis](https://github.com/aoli0919/Human-Texture-Exploration-Experiment/actions/workflows/reproduce.yml/badge.svg)](https://github.com/aoli0919/Human-Texture-Exploration-Experiment/actions/workflows/reproduce.yml)
+
 Data and software for studying how people perceive ten textures and vary their single-finger exploration. The supplied workbooks contain 40 participant columns, 2,000 perceptual ratings, and 400 reported force/speed pairs.
 
 The analysis runs without a camera, force sensor, or downloaded videos. It reproduces summaries and explicitly defined analyses of the processed data. The original raw-force preprocessing and video-to-speed extraction are not supplied, so this does not establish a reproduction of those pipelines or of a paper's results.
@@ -51,6 +53,8 @@ Open `outputs/reproduction/report.md` for results and `audit.json` for validatio
 | `figures/` | PNG and SVG ratings, force/speed distributions, and association figures |
 
 Rerunning replaces generated files in this output directory. A nonempty directory created outside this tool is rejected to protect existing work. To run the regression tests, use `python -m unittest discover -s tests`.
+
+CI runs the tests and the complete analysis on Linux with Python 3.11 and 3.12, and uploads the results under each workflow run's **Artifacts** section. The supplied dataset passes 25 regression tests and full validation of 400 observations, 2,000 matched ratings, and 48,246 raw-force samples. Hardware operation is not part of these checks.
 
 Correlations treat participants as repeated-measurement units and report their rho distributions. They do not treat all 400 observations as independent subjects or claim a paper's regression results. See [methods](docs/methods.md) and the [data dictionary](docs/data_dictionary.md).
 
