@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "human-texture-exploration"
+version = "0.1.0"
+description = "Reproducible analysis of human single-finger texture exploration data"
+readme = "README.md"
+requires-python = ">=3.11"
+license = "MIT"
+authors = [{name = "Ao Li"}]
+dependencies = [
+  "numpy>=1.26,<3",
+  "pandas>=2.2,<4",
+  "scipy>=1.11,<2",
+  "matplotlib>=3.9,<4",
+  "openpyxl>=3.1,<4",
+]
+
+[project.optional-dependencies]
+acquisition = ["opencv-python>=4.8,<5", "pyserial>=3.5,<4", "minimalmodbus>=2.1,<3", "libscrc>=1.8,<2"]
+
+[project.scripts]
+human-texture = "human_texture.cli:main"
+
+[tool.setuptools]
+packages = ["human_texture", "acquisition"]
+package-dir = {human_texture = "src/human_texture", acquisition = "acquisition"}
